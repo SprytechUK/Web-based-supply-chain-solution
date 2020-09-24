@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="ManufView.css">
+	
+	</head>
+<body>	
+	<div class="container-fluid">	
+						
+						<div class="row" style="background-color:black;">
+							<div class="col-sm-8 " style="padding-top: 10px;font-size: 40px; text-align: center; background: 
+							-webkit-linear-gradient(#A915FE, #1589FE); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+								PHARMACHAIN</div>   
+							<div class="col-sm-4">
+							<form method="POST" action="login.php" role="form" >
+								<div class="row">
+									<div class="col-sm-5" id="emcol">																		  
+						  			<label for="email" style="color:white;font-style:bold;">Email ID</label>
+									<input class="form-control nav-link" type="email" name="email" style="color:black;">
+									</div>	
+									<div class="col-sm-5">								  
+									<label for="password" style="color:white;font-style:bold;">Password</label>
+									<input class="form-control" type="password" name="password" style="color:black;">
+									</div>
+									
+									<div class="col-sm-2" id="btsub">
+									
+									<input type="submit" class="btn btn-primary" value="Log In" name="LOGIN" >
+									</div>
+									
+								</div>
+							</form>
+							</div>
+						</div>
+		
+					<div class="row">
+						<div class="col-sm-6" id="dispic" style="background-image: url('img2.png');background-size:70% 70%; background-repeat: no-repeat; background-position: center;">
+							
+						</div>
+						<div class="col-sm-6">
+							<form onsubmit="return checkPasswordMatch()" action="RegistrationForm.php" method="POST"  role="form" enctype="multipart/form-data" name="myForm" >
+								<div class="container-fluid">
+									<h1 style="text-align: center; padding-top: 15px;">Create an account</h1>
+									<p style="text-align:center; color:red"><span class="error">* required field</span></p>
+									<div class="form-group row" style="padding-top: 15px;">
+										<label for="comp_name" class="col-sm-4 col-form-label" style="text-align:center;" >
+										Company name <p style="color:red; display:inline">*</p>
+										</label>
+										<div class="col-sm-7">
+										<input class="form-control" type="name" name="comp_name" required>
+										</div>
+									</div>
+
+									<div class="form-group row" >
+											<label for="comp_address" class="col-sm-4 col-form-label" style="text-align:center;" >
+											Company Address <p style="color:red; display:inline">*</p></label>
+											<div class="col-sm-7">
+											<input class="form-control" type="text" name="comp_address" required>
+											</div>
+									</div>
+
+									<div class="form-group row">
+											<label for="email" class="col-sm-4 col-form-label" style="text-align:center;" >
+											Email ID <p style="color:red; display:inline">*</p></label>
+											<div class="col-sm-7">
+											<input class="form-control" type="email" name="email" required>
+											</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="option" class="col-sm-4 col-form-label" style="text-align:center;">Type of actor<p style="color:red; display:inline">*</p></label>
+										<div class="col-sm-7" style="text-align: center">
+											<label class="btn btn-primary">
+													<input type="radio" name="option" value="Manufacturer" required> Manufacturer
+											</label>
+											<label class="btn btn-primary">
+													<input type="radio" name="option" value="Distributor"> Distributor
+											</label>
+											<label class="btn btn-primary">
+													<input type="radio" name="option" value="Retailer"> Retailer
+											</label>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="fileToUpload"class="col-sm-4 col-form-label" style="text-align:center;"> License to upload:<p style="color:red; display:inline">*</p>
+										</label>
+										<div class="col-sm-7">
+												<div class="custom-file">
+													<input type="file" name="filename" id="fileToUpload" required>*
+												</div>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="password" class="col-sm-4 col-form-label" style="text-align:center;" >
+										Password <p style="color:red; display:inline">*</p></label>
+										<div class="col-sm-7">
+											<input id="psw" class="form-control" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+											<input type="checkbox" onclick="myFunction()">Show Password
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="password" class="col-sm-4 col-form-label" style="text-align:center;" >
+										Confirm Password <p style="color:red; display:inline">*</p></label>
+										<div class="col-sm-7">
+										<input id="conpsw" class="form-control" type="password" name="confirmpassword" required>
+										<span id="pswmsg" style="color:red"></span>
+										</div>
+									</div>
+
+									<div class="form-group row">
+											<div class="offset-sm-2 col-sm-10" style="text-align:center;">
+												<input type="submit" class="btn btn-primary" value="Submit" name="submit">
+											</div>
+									</div>
+								</div>					
+							</form>
+						</div>
+					</div>
+	</div>
+<script>
+	function myFunction() {
+		var x = document.getElementById("psw");
+		if (x.type === "password") {
+			x.type = "text";
+		} else {
+			x.type = "password";
+		}
+	}
+	function checkPasswordMatch() {
+		var password = document.getElementById("psw").value;
+		var confirmPassword = document.getElementById("conpsw").value;
+
+		if (password != confirmPassword){
+			document.getElementById("pswmsg").innerHTML="Passwords do not match!";
+			return false;
+		}
+		return true;
+	}
+
+</script>		
+</body>
+</html>

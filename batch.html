@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<form id="batch-form" method="POST" action="batchForm.php" role="form">
+	<div class="container-fluid" style="padding-top:15px;">
+		<label class="col-12" style="text-align:center"><b>Batch form</b></label>
+	<div class="form-group row">
+		<label for="batch_num" class="col-4 col-form-label" style="text-align:center;" > Batch number
+			<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="number" id="batch_num" name="batch_num" required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="prname" class="col-4 col-form-label" style="text-align:center;" > Product name
+				<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="name" id="prname" name="prname"  required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="Mfgdate" class="col-4 col-form-label" style="text-align:center;" > Batch Mfg Date
+				<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="date" id="Mfgdate" name="mfgdate"  required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="Expdate" class="col-4 col-form-label" style="text-align:center;" > Batch Exp Date
+				<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="date" id="Expdate" name="expdate"  required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="Pckdate" class="col-4 col-form-label" style="text-align:center;" > Batch Package date
+				<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="date" id="Pckdate" name="pckdate"  required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="size" class="col-4 col-form-label" style="text-align:center;" > Batch quantity
+			<p style="color:red; display:inline">*</p></label>
+		<div class="col-7">
+			<input class="form-control" type="number" id="size" name="size"  required>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label for="weight" class="col-4 col-form-label" style="text-align:center;" > Batch weight 
+				<p style="color:red; display:inline">*</p></label>
+		<div class="col-6">
+			<input class="form-control" type="number" step="0.01" id="weight" name="weight"  required>
+		</div>
+		<div class="col-1">
+				<p style="text-align:left;font-size: 20px;">Kg</p>
+		</div>
+	</div>
+	<div class="form-group row">
+		 <div class="offset-sm-2 col-sm-10" style="text-align:center;">
+			 <input type="submit" class="btn btn-dark" name="submit">
+		 </div>
+	 </div>
+	</div>
+</form>
+</body>
+</html>

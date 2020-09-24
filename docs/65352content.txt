@@ -1,0 +1,57 @@
+﻿PharmaChain is a Blockchain solution designed to overcome challenges associated with the traceability of pharmaceutical drug through entire supply chain by providing an End-to-End secure platform for sharing and accessing data. Full details can be found out below.
+
+Overview - Background
+Challenges
+Solution
+Download Full Report
+
+Overview - Background
+In today’s World where the manufacture and supply of goods is connected by means of Supply chain, the Counterfeiting of products is exponentially increasing with the increase in sales. Counterfeit Drug is a major issue facing those involved in the drugs supply chain across the world. Counterfeit Drugs, along with having impact on revenue, can also have an impact on the health of the end consumer.  Thus making this a major global issue. Due to Counterfeit drugs, the Manufacturer is at risk of losing credibility and impact to their reputation, as well as affecting their revenue through loss in sales of their genuine products.
+The World Health Organisation estimates that,
+
+ 	10-15% of the global Pharmaceutical Market on average consists of Counterfeit Drugs.
+ 	The Pharmaceutical Industry loses nearly 60 billion pounds per year due to counterfeit drugs.
+ 	30% of medicines in some areas of Asia and South America are counterfeit.
+ 	20% of medicines in some countries of eastern Europe are counterfeit.
+and 42% of medicines in Africa are known to be counterfeit.
+
+According to a recent Intellectual Property Rights infringment report,
+Counterfeit drugs, directly cost over 14 billion pounds to Pharmaceutical Companies in Europe alone. Based on Data from the Pharmaceutical Security Institute,
+
+ 	There were 954 incidents of counterfeit drugs reported in Asia
+ 	381 incidents reported in south America
+ 	351 incidents reported in Europe
+ 	237 incidents reported in some parts of North America
+ 	64 incidents reported in Africa.
+
+
+Challenges
+There are many challenges with the traditional Supply Chain of pharmaceutical drugs when it comes to dealing with counterfeit drugs, which include;
+Every Actor faces the problem of a lack of traceability through the entire supply chain.
+Manufacturers face problems with the management of all the data involved in the supply chain process.
+Theft or Manipulation of Shipments is a major issue for distributors.
+Validating and verifying the authenticity of the drugs by the retailer.
+Ensuring the authenticity of a particular drug by the end consumer.
+
+Also, the process is filled with many documents and data across every step in the supply chain process. Sometimes repetitive documents are created.
+
+
+
+Our Solution
+Blockchain is chain of blocks that are linked using cryptography. It is based on distributed ledger technology which allows user to share data amongst each other freely. The data stored on blockchain is immutable. This technology provides transparency, traceability, security, fast access and helps to prevent loads of documentation. These features build trust amongst the actors.
+Sprytech can provide a Blockchain solution to help combat the problem of Counterfeit Drugs with PharmaChain, a blockchain product developed using our own Patented Blockchain Platform – S-Blox DLT. S-Blox provides a number of bespoke features including:
+
+ 	Fast transactions and throughput
+ 	High Performance
+ 	Unique quantum immune CryptoGraphy
+ 	Fully Customizable Process
+ 	A flexible and Interoperable blockchain Platform
+
+Pharma Chain will bring several benefits to the Supply Chain,
+including,
+
+ 	Verification of the authentic drug for every actor.
+ 	Validation of the data written by any actor on the blockchain.
+ 	An Immutable database.
+ 	Full traceability and Tracking of the end to end supply chain data will be possible.
+ 	Access control for who can access access the data can be managed by the data owner.

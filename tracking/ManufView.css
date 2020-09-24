@@ -1,0 +1,142 @@
+body, html {
+	background-color:white;
+	height:auto;
+
+}
+
+
+#emcol{
+	padding-bottom: 10px;
+
+}
+#btsub{
+	margin-top: 30px;
+	padding-left:1px;
+}
+
+#BlockSupplyChain{
+	text-align:center;
+	background-color:black;
+		color:white;
+		padding-right: 50px;
+}
+
+#pharmaTitle{
+
+	background-color: black;
+  text-align: center;
+	color:white;
+	font-size: 30px;
+
+}
+#mobile{
+	display:none;
+}
+#desktop{
+	font-size: 30px;
+  background: -webkit-linear-gradient(#A915FE, #1589FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+		#TitleBlockSupply
+			{
+					line-height:40px;
+			}
+
+			#actorsactive
+			{
+				border: solid;
+				border-color: green;
+			}
+
+
+			a {
+			color:white;
+			text-decoration:none;
+			padding: 0px 10px;
+			}
+
+			a:hover{
+
+				text-decoration: none;
+				color:white;
+			}
+
+			figure
+			{
+				margin:0px;
+			}
+			.img
+			{
+				width:30%;
+			}
+			.imgactive
+			{
+				width:50%;
+			}
+
+
+#Main{
+	text-align:left;
+	background-color: rgba(255,255,255,0.4);
+}
+
+
+
+.btn.lab
+{
+	height: 50px;
+	width: 80%;
+	line-height:40px;
+	font-size: 18px;
+}
+.imgtick{
+	width: 40px;
+}
+
+.nav-link
+{
+	color:white;
+}
+
+#label
+{
+	font-size: 40px;
+	text-align: left;
+	background: -webkit-linear-gradient(#A915FE, #1589FE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+@media screen and (max-width:600px)
+{
+	#desktop{
+		display: none;
+	}
+	#mobile{
+		display:block;
+		padding-top: 20px;
+	}
+	#BlockSupplyChain{
+		padding-right: 0;
+	}
+	#paddinForTracklink{
+		padding-left: 10px;
+	}
+	#emcol{
+		padding-bottom: 0px;
+	}
+	#btsub{
+		padding-left: 15px;
+		padding-bottom: 5px;
+	}
+	#dispic{
+		display: none;
+	}
+	#dispic1{
+		display: none;
+	}
+}

@@ -1,0 +1,162 @@
+.col-sm{
+  width: 100%;
+}
+
+
+#progress {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#progress .li {
+  transition: all 200ms ease-in;
+}
+
+.timestamp {
+  margin-bottom: 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 100;
+}
+
+.status {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #D6DCE0;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+.status h4 {
+  font-weight: 600;
+}
+.status:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: -15px;
+  left: 42%;
+  transition: all 200ms ease-in;
+}
+
+.li.complete .status {
+  border-top: 2px solid #66DC71;
+}
+.li.complete .status:before {
+  background-color: #66DC71;
+  border: none;
+  transition: all 200ms ease-in;
+}
+.li.complete .status h4 {
+  color: #66DC71;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .timeline {
+    list-style-type: none;
+    display: block;
+  }
+
+  .li {
+    transition: all 200ms ease-in;
+    display: flex;
+    width: inherit;
+  }
+
+  .timestamp {
+    width: 100px;
+  }
+
+  .status:before {
+    left: -8%;
+    top: 30%;
+    transition: all 200ms ease-in;
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Titillium Web", sans serif;
+  color: #758D96;
+}
+
+button {
+  position: absolute;
+  width: 100px;
+  min-width: 100px;
+  padding: 20px;
+  margin: 20px;
+  font-family: "Titillium Web", sans serif;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+#toggleButton {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  background-color: #75C7F6;
+}
+
+
+
+  /* Timeline holder */
+  ul.timeline {
+      list-style-type: none;
+      position: relative;
+      padding-left: 1.5rem;
+  }
+
+   /* Timeline vertical line */
+  ul.timeline:before {
+      content: ' ';
+      background: grey;
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      width: 4px;
+      height: 100%;
+      z-index: 400;
+      border-radius: 1rem;
+  }
+
+  li.timeline-item {
+      margin: 20px 0;
+  }
+
+  /* Timeline item arrow */
+  .timeline-arrow {
+      border-top: 0.5rem solid transparent;
+      border-right: 0.5rem solid #fff;
+      border-bottom: 0.5rem solid transparent;
+      display: block;
+      position: absolute;
+      left: 2rem;
+  }
+
+  /* Timeline item circle marker */
+  li.timeline-item::before {
+      content: ' ';
+      background: purple;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      left: 9px;
+      width: 20px;
+      height: 20px;
+      z-index: 400;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
